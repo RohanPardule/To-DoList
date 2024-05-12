@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+android:background="@color/background_clr">
+
+<Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="60dp"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/toolbar_rl">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To-Do List"
+       android:layout_marginLeft="40dp"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@id/title"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/correct_icon" />
+
+</RelativeLayout>
+
+<com.google.android.material.tabs.TabLayout
+    android:id="@+id/tabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar_rl"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="0dp"
+    android:backgroundTint="@color/background_clr"
+    app:tabIndicatorColor="#FFF1F1"
+    app:tabIndicatorFullWidth="true"
+    app:tabMode="fixed"
+    app:tabSelectedTextColor="#ECDAF3"
+    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+    app:tabTextColor="@color/white" />
+
+<androidx.viewpager2.widget.ViewPager2
+    android:id="@+id/viewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/curved_rectangle"
+    android:layout_below="@id/tabLayout"/>
+
+
+</RelativeLayout>

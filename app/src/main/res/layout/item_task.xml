@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="80dp"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+app:cardCornerRadius="20dp"
+app:cardElevation="5dp"
+android:layout_margin="10dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="16dp">
+
+
+    <TextView
+       android:id="@+id/taskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make a to-do list"
+        android:textSize="20sp"
+        android:textColor="@color/background_clr"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp" />
+
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+<!--<ImageView-->
+<!--android:id="@+id/favoriteIcon"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:src="@drawable/favourite"-->
+<!--android:visibility="gone" />-->
